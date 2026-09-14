@@ -849,8 +849,10 @@ function DemoModal({ open, onClose }: { open: boolean; onClose: () => void }) {
     return () => {
       document.body.style.overflow = ''
       document.removeEventListener('keydown', handleKey)
-      previous?.focus({ preventScroll: true })
-      window.scrollTo({ top: scrollPosition, behavior: 'auto' })
+      window.requestAnimationFrame(() => {
+        if (previous?.isConnected) previous.focus({ preventScroll: true })
+        window.scrollTo({ top: scrollPosition, behavior: 'auto' })
+      })
     }
   }, [open, onClose, submitted])
   if (!open) return null
