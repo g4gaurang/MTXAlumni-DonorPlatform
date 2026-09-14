@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">MTX Alumni and Donor Platform</title>
+  <desc id="desc">Abstract relationship network on a deep navy background</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#07182f"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#60a5fa" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="960" cy="100" r="380" fill="url(#glow)"/>
+  <g fill="none" stroke="#818cf8" stroke-width="3" opacity=".5">
+    <path d="M780 185 930 120l120 120-90 150-170-20-80-110z"/>
+    <path d="m790 185 170 205M930 120l30 270M710 260l340-20"/>
+  </g>
+  <g fill="#eef2ff" stroke="#6366f1" stroke-width="8">
+    <circle cx="780" cy="185" r="18"/><circle cx="930" cy="120" r="18"/>
+    <circle cx="1050" cy="240" r="18"/><circle cx="960" cy="390" r="18"/>
+    <circle cx="790" cy="370" r="18"/><circle cx="710" cy="260" r="18"/>
+  </g>
+  <text x="90" y="190" fill="#a5b4fc" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5">MTX HIGHER EDUCATION</text>
+  <text x="90" y="275" fill="white" font-family="Arial, sans-serif" font-size="62" font-weight="700">Alumni &amp; Donor</text>
+  <text x="90" y="345" fill="white" font-family="Arial, sans-serif" font-size="62" font-weight="700">Platform</text>
+  <text x="90" y="415" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="28">Connected advancement. Configurable by design.</text>
+</svg>
