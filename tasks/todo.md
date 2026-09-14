@@ -16,6 +16,6 @@ Implemented the complete product page and verified it at desktop, tablet, and mo
 ## Publication follow-up
 
 * [x] Confirm GitHub Pages is configured for workflow deployment.
-* [ ] Trigger deployment from the implementation branch and wait for completion.
+* [x] Attempt deployment from the implementation branch and confirm the repository policy permits only `main`.
 * [ ] Verify the public URL serves the application and its repository-subpath assets.
-* [ ] Restore the workflow to `main`-only deployment and update the branch.
+* [x] Restore the workflow to `main`-only deployment and update the branch.
