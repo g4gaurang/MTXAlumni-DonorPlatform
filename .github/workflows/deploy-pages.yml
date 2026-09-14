@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - cursor/build-product-landing-page-91ea
   workflow_dispatch:
 
 permissions:
