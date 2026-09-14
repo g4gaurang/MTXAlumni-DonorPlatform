@@ -832,6 +832,7 @@ function DemoModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   useEffect(() => {
     if (!open) return
     const previous = document.activeElement as HTMLElement
+    const scrollPosition = window.scrollY
     document.body.style.overflow = 'hidden'
     const dialog = dialogRef.current
     const focusable = dialog?.querySelectorAll<HTMLElement>('button, input, select, textarea, [href], [tabindex]:not([tabindex="-1"])')
@@ -845,7 +846,12 @@ function DemoModal({ open, onClose }: { open: boolean; onClose: () => void }) {
       }
     }
     document.addEventListener('keydown', handleKey)
-    return () => { document.body.style.overflow = ''; document.removeEventListener('keydown', handleKey); previous?.focus() }
+    return () => {
+      document.body.style.overflow = ''
+      document.removeEventListener('keydown', handleKey)
+      previous?.focus({ preventScroll: true })
+      window.scrollTo({ top: scrollPosition, behavior: 'auto' })
+    }
   }, [open, onClose, submitted])
   if (!open) return null
   const close = () => { setSubmitted(false); onClose() }
